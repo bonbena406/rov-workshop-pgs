@@ -4,6 +4,7 @@ import HomeContent from "./home-content"
 
 export const dynamic = "force-dynamic"
 export const revalidate = 0
+export const fetchCache = "force-no-store"
 
 export default async function HomePage() {
   // Fetch data on the server for maximum performance
