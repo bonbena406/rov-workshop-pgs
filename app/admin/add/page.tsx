@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { AvatarUpload } from "@/components/ui/avatar-upload"
 import { addPersonnel } from "@/lib/personnel-data"
+import { recordAuditLog } from "@/lib/audit-logs"
 import { Save, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
@@ -57,6 +58,12 @@ export default function AddPersonnelPage() {
 
       if (success) {
         setMessage("Thêm nhân viên thành công!")
+        recordAuditLog({
+          action_type: "CREATE_PERSONNEL",
+          target_name: formData.ho_va_ten || "Nhân viên mới",
+          summary: `Thêm nhân viên mới: ${formData.ho_va_ten} (${formData.chuc_vu || "Nhân viên"})`,
+          details: formData,
+        })
         setTimeout(() => {
           router.push("/admin")
         }, 1500)

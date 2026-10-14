@@ -19,6 +19,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 import { getAllPersonnel, deletePersonnel } from "@/lib/personnel-data"
+import { recordAuditLog } from "@/lib/audit-logs"
 import { getAvatarUrl, type PersonnelDB } from "@/lib/supabase"
 import { ArrowLeft, Search, Trash2 } from "lucide-react"
 
@@ -60,6 +61,12 @@ export default function DeletePersonnelPage() {
     try {
       const success = await deletePersonnel(id)
       if (success) {
+        recordAuditLog({
+          action_type: "DELETE_PERSONNEL",
+          target_name: `${name} (ID: ${id})`,
+          summary: `Xóa nhân viên khỏi hệ thống: ${name}`,
+          details: { id, name },
+        })
         alert(`Đã xóa ${name} thành công!`)
         await loadPersonnel()
       } else {

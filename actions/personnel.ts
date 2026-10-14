@@ -1,6 +1,3 @@
-"use server"
-
-import { revalidatePath, revalidateTag } from "next/cache"
 import { updatePersonnel } from "@/lib/personnel-data"
 import { type PersonnelDB } from "@/lib/supabase"
 
@@ -44,28 +41,17 @@ export async function updatePersonnelAction(formData: FormData) {
       basic_rigging: formData.get("basic_rigging") as string,
     }
 
-    console.log("Server action - updating personnel:", id, updates)
+    console.log("Updating personnel:", id, updates)
 
     const success = await updatePersonnel(id, updates)
 
     if (success) {
-      // Comprehensive revalidation
-      revalidatePath("/", "layout")
-      revalidatePath(`/profile/${id}`, "page")
-      revalidatePath(`/profile/${id}/edit`, "page")
-      revalidatePath("/admin", "page")
-      revalidatePath("/admin/manage", "page")
-
-      // Add cache tags for better invalidation
-      revalidateTag("personnel")
-      revalidateTag(`personnel-${id}`)
-
       return { success: true, message: "Cập nhật thành công!" }
     } else {
       return { success: false, message: "Có lỗi xảy ra khi cập nhật!" }
     }
   } catch (error) {
-    console.error("Server action error:", error)
+    console.error("Action error:", error)
     return {
       success: false,
       message: error instanceof Error ? error.message : "Có lỗi xảy ra!",

@@ -6,6 +6,12 @@ export const siteConfig = {
   tableName: process.env.NEXT_PUBLIC_TABLE_NAME || "rov_workshop_data",
   department: "Xưởng ROV",
   company: "PTSC G&S",
+  // Thứ tự hiển thị các Xưởng phó từ trái qua phải (theo Họ và Tên)
+  deputyOrder: [
+    "Mai Thế Hùng",
+    "Bùi Đình Vượng",
+    "Đinh Ngọc Hưng",
+  ],
   labels: {
     totalEmployees: "Tổng số nhân viên",
     loading: "Đang tải dữ liệu...",

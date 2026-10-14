@@ -1,0 +1,30 @@
+{
+  "panther-954": {
+    "rovId": "panther-954",
+    "statusCategory": "standby_vessel",
+    "statusLabel": "Standby do tàu khách hàng lên đốc",
+    "detailText": "ROV 954 standby do tàu của khách hàng lên đốc",
+    "updatedAt": "2026-10-14T00:00:00.000Z"
+  },
+  "compact-07": {
+    "rovId": "compact-07",
+    "statusCategory": "operating",
+    "statusLabel": "Đang thực hiện dự án",
+    "detailText": "ROV Quasar 07 đang thực hiện dự án khảo sát UWILD cho khách hàng MVOT tại Malaysia",
+    "updatedAt": "2026-10-14T01:29:55.475Z"
+  },
+  "quasar-30": {
+    "rovId": "quasar-30",
+    "statusCategory": "operating",
+    "statusLabel": "Đang thi công dự án",
+    "detailText": "ROV MKII-30 đang thực hiện dự án cho khách hàng PVGAS từ ngày 30/9/2026",
+    "updatedAt": "2026-10-14T01:54:41.283Z"
+  },
+  "panther-911": {
+    "rovId": "panther-911",
+    "statusCategory": "operating",
+    "statusLabel": "Đang thi công dự án",
+    "detailText": "ROV 911 đang làm việc dự án INDEPTH trên tàu Shujaa 2000",
+    "updatedAt": "2026-10-14T00:00:00.000Z"
+  }
+}

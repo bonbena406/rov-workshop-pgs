@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation"
-import { getPersonnelById } from "@/lib/personnel-data"
+import { getAllPersonnel, getPersonnelById } from "@/lib/personnel-data"
 import EditForm from "./form"
 
-export const dynamic = "force-dynamic"
-export const revalidate = 0
+export async function generateStaticParams() {
+  const all = await getAllPersonnel()
+  return all.map((p) => ({ id: p.id.toString() }))
+}
 
 interface EditPageProps {
   params: Promise<{ id: string }>

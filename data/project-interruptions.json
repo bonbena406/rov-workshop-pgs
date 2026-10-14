@@ -1,0 +1,98 @@
+{
+  "14": [
+    {
+      "id": "int_306_1",
+      "recordId": 14,
+      "recordNo": 306,
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-22",
+      "days": 13,
+      "reason": "Standby chờ giấy phép mỏ KSA",
+      "note": "Tháng 7 nghỉ 13 ngày (từ 10/07 đến 22/07/2026)",
+      "createdAt": "2026-07-10T00:00:00Z"
+    },
+    {
+      "id": "int_306_2",
+      "recordId": 14,
+      "recordNo": 306,
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-20",
+      "days": 13,
+      "reason": "Bảo dưỡng định kỳ hệ thống ROV Panther Plus 911",
+      "note": "Tháng 8 nghỉ 13 ngày (từ 08/08 đến 20/08/2026)",
+      "createdAt": "2026-08-08T00:00:00Z"
+    }
+  ],
+  "15": [
+    {
+      "id": "int_305_1",
+      "recordId": 15,
+      "recordNo": 305,
+      "startDate": "2026-07-05",
+      "endDate": "2026-07-20",
+      "days": 16,
+      "reason": "Tạm ngưng chờ thời tiết biển xấu",
+      "note": "Tháng 7 nghỉ 16 ngày (từ 05/07 đến 20/07/2026)",
+      "createdAt": "2026-07-05T00:00:00Z"
+    },
+    {
+      "id": "int_305_2",
+      "recordId": 15,
+      "recordNo": 305,
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-22",
+      "days": 11,
+      "reason": "Tàu Shujaa 2000 về cảng chuyển quân & bảo dưỡng",
+      "note": "Tháng 8 nghỉ 11 ngày (từ 12/08 đến 22/08/2026)",
+      "createdAt": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "305": [
+    {
+      "id": "int_305_1",
+      "recordId": 15,
+      "recordNo": 305,
+      "startDate": "2026-07-05",
+      "endDate": "2026-07-20",
+      "days": 16,
+      "reason": "Tạm ngưng chờ thời tiết biển xấu",
+      "note": "Tháng 7 nghỉ 16 ngày (từ 05/07 đến 20/07/2026)",
+      "createdAt": "2026-07-05T00:00:00Z"
+    },
+    {
+      "id": "int_305_2",
+      "recordId": 15,
+      "recordNo": 305,
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-22",
+      "days": 11,
+      "reason": "Tàu Shujaa 2000 về cảng chuyển quân & bảo dưỡng",
+      "note": "Tháng 8 nghỉ 11 ngày (từ 12/08 đến 22/08/2026)",
+      "createdAt": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "306": [
+    {
+      "id": "int_306_1",
+      "recordId": 14,
+      "recordNo": 306,
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-22",
+      "days": 13,
+      "reason": "Standby chờ giấy phép mỏ KSA",
+      "note": "Tháng 7 nghỉ 13 ngày (từ 10/07 đến 22/07/2026)",
+      "createdAt": "2026-07-10T00:00:00Z"
+    },
+    {
+      "id": "int_306_2",
+      "recordId": 14,
+      "recordNo": 306,
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-20",
+      "days": 13,
+      "reason": "Bảo dưỡng định kỳ hệ thống ROV Panther Plus 911",
+      "note": "Tháng 8 nghỉ 13 ngày (từ 08/08 đến 20/08/2026)",
+      "createdAt": "2026-08-08T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+[
+  {
+    "id": "asgn_1791886146863",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 1,
+    "personnelName": "Phạm Ngọc Đức Trí",
+    "role": "ROV Superintendent",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-13T10:09:06.863Z"
+  },
+  {
+    "id": "asgn_1791938630513",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 3,
+    "personnelName": "Nguyễn Lê Thiên Phú",
+    "role": "Senior ROV Supervisor",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:43:50.513Z"
+  },
+  {
+    "id": "asgn_1791938687263",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 4,
+    "personnelName": "Nguyễn Trung Hiếu",
+    "role": "Senior ROV Supervisor",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:44:47.263Z"
+  },
+  {
+    "id": "asgn_1791938821462",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 8,
+    "personnelName": "Nguyễn Trương Hoài Phong",
+    "role": "ROV Submersible",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:47:01.462Z"
+  },
+  {
+    "id": "asgn_1791938860477",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 7,
+    "personnelName": "Nguyễn Văn Thắng",
+    "role": "ROV Submersible",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:47:40.477Z"
+  },
+  {
+    "id": "asgn_1791938892030",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 14,
+    "personnelName": "Đặng Trọng Hùng",
+    "role": "ROV Submersible",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:48:12.030Z"
+  },
+  {
+    "id": "asgn_1791938913022",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 11,
+    "personnelName": "Lương Ngọc Toàn",
+    "role": "ROV Submersible",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:48:33.022Z"
+  },
+  {
+    "id": "asgn_1791939104277",
+    "rovId": "compact-07",
+    "rovName": "Compact 07",
+    "personnelId": 2,
+    "personnelName": "Mai Thế Hùng",
+    "role": "ROV Superintendent",
+    "startDate": "2026-09-29",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:51:44.277Z"
+  },
+  {
+    "id": "asgn_1791939128956",
+    "rovId": "compact-07",
+    "rovName": "Compact 07",
+    "personnelId": 5,
+    "personnelName": "Lê Nguyễn Pháp",
+    "role": "Senior ROV Supervisor",
+    "startDate": "2026-09-29",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:52:08.956Z"
+  },
+  {
+    "id": "asgn_1791939153372",
+    "rovId": "compact-07",
+    "rovName": "Compact 07",
+    "personnelId": 10,
+    "personnelName": "Hồ Sỹ Hùng",
+    "role": "ROV Submersible",
+    "startDate": "2026-09-29",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:52:33.372Z"
+  },
+  {
+    "id": "asgn_1791939188132",
+    "rovId": "compact-07",
+    "rovName": "Compact 07",
+    "personnelId": 19,
+    "personnelName": "Lê Thanh Bình",
+    "role": "ROV Pilot technician",
+    "startDate": "2026-09-29",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:53:08.132Z"
+  },
+  {
+    "id": "asgn_1791939218156",
+    "rovId": "compact-07",
+    "rovName": "Compact 07",
+    "personnelId": 22,
+    "personnelName": "Phạm Tiến Thành",
+    "role": "Junior ROV Pilot",
+    "startDate": "2026-09-29",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:53:38.156Z"
+  },
+  {
+    "id": "asgn_1791939345436",
+    "rovId": "panther-911",
+    "rovName": "Panther Plus 911",
+    "personnelId": 20,
+    "personnelName": "Trần Văn Long",
+    "role": "ROV Pilot technician",
+    "startDate": "2026-09-20",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:55:45.436Z"
+  },
+  {
+    "id": "asgn_1791939430371",
+    "rovId": "panther-911",
+    "rovName": "Panther Plus 911",
+    "personnelId": 13,
+    "personnelName": "Phạm Văn Toản",
+    "role": "ROV Pilot technician",
+    "startDate": "2026-07-21",
+    "endDate": null,
+    "createdAt": "2026-10-14T00:57:10.371Z"
+  },
+  {
+    "id": "asgn_1791941693041",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 6,
+    "personnelName": "Trương Thanh Hùng",
+    "role": "ROV Pilot technician",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T01:34:53.041Z"
+  },
+  {
+    "id": "asgn_1791941709741",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 21,
+    "personnelName": "Nguyễn Minh Thiện",
+    "role": "ROV Pilot technician",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T01:35:09.741Z"
+  },
+  {
+    "id": "asgn_1791941737014",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 24,
+    "personnelName": "Nguyễn Xuân Trung",
+    "role": "Assistant ROV Pilot",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T01:35:37.014Z"
+  },
+  {
+    "id": "asgn_1791941795669",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 23,
+    "personnelName": "Nguyễn Thành Long",
+    "role": "Assistant ROV Pilot",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T01:36:35.669Z"
+  },
+  {
+    "id": "asgn_1791941814204",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 25,
+    "personnelName": "Lê Nguyễn Nhựt",
+    "role": "Assistant ROV Pilot",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T01:36:54.204Z"
+  },
+  {
+    "id": "asgn_1791941831683",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 30,
+    "personnelName": "Phạm Đức Lương",
+    "role": "ROV Pilot support engineer",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T01:37:11.683Z"
+  },
+  {
+    "id": "asgn_1791941845594",
+    "rovId": "quasar-30",
+    "rovName": "Quasar II - 30",
+    "personnelId": 31,
+    "personnelName": "Lê Quang Đại",
+    "role": "ROV Pilot support engineer",
+    "startDate": "2026-09-30",
+    "endDate": null,
+    "createdAt": "2026-10-14T01:37:25.594Z"
+  }
+]

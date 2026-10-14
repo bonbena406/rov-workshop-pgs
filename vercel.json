@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://rov-pma.web.app/$1",
+      "permanent": true
+    }
+  ]
+}

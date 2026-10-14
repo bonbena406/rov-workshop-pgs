@@ -42,8 +42,8 @@ export default function EditForm({ person }: EditFormProps) {
     address: person.address,
     experience: person.experience,
     education: person.education,
-    skills: person.skills.join(", "),
-    responsibilities: person.responsibilities.join("\n"),
+    skills: Array.isArray(person.skills) ? person.skills.join(", ") : (person.skills ?? ""),
+    responsibilities: Array.isArray(person.responsibilities) ? person.responsibilities.join("\n") : (person.responsibilities ?? ""),
     avatar: person.avatar ?? "",
   })
 

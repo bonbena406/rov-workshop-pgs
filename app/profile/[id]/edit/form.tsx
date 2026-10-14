@@ -12,6 +12,7 @@ import { ArrowLeft, Save, CheckCircle } from "lucide-react"
 import type { PersonnelDB } from "@/lib/supabase"
 import { AvatarUpload } from "@/components/ui/avatar-upload"
 import { updatePersonnelAction } from "@/actions/personnel"
+import { recordAuditLog } from "@/lib/audit-logs"
 import Link from "next/link"
 
 interface EditFormProps {
@@ -90,6 +91,23 @@ export default function EditForm({ person }: EditFormProps) {
         if (result.success) {
           setMessage("Cập nhật thông tin thành công!")
           setIsSuccess(true)
+
+          const changedFields = Object.keys(formData).filter(
+            (k) => (formData as any)[k] !== (person as any)[k]
+          )
+
+          recordAuditLog({
+            action_type: "UPDATE_PERSONNEL",
+            target_name: `${person.ho_va_ten} (ID: ${person.id})`,
+            summary: `Cập nhật hồ sơ nhân sự ${person.ho_va_ten}${
+              changedFields.length > 0 ? ` (${changedFields.slice(0, 3).join(", ")})` : ""
+            }`,
+            details: {
+              personId: person.id,
+              name: person.ho_va_ten,
+              changedFields,
+            },
+          })
 
           // Wait a bit longer and force a hard refresh
           setTimeout(() => {

@@ -9,7 +9,8 @@ import { type PersonnelDB, getAvatarUrl } from "@/lib/supabase"
 interface BirthdayModalProps {
   isOpen: boolean
   onClose: () => void
-  allPersonnel: PersonnelDB[]
+  allPersonnel?: PersonnelDB[]
+  personnel?: PersonnelDB[]
 }
 
 interface BirthdayInfo {
@@ -18,15 +19,17 @@ interface BirthdayInfo {
   day: number
 }
 
-export default function BirthdayModal({ isOpen, onClose, allPersonnel }: BirthdayModalProps) {
+export default function BirthdayModal({ isOpen, onClose, allPersonnel, personnel }: BirthdayModalProps) {
   const [birthdays, setBirthdays] = useState<BirthdayInfo[]>([])
   const [selectedMonth, setSelectedMonth] = useState<number>(new Date().getMonth() + 1)
+
+  const people = allPersonnel || personnel || []
 
   useEffect(() => {
     if (isOpen) {
       const birthdayList: BirthdayInfo[] = []
 
-      allPersonnel.forEach((person) => {
+      people.forEach((person) => {
         if (!person.ngay_sinh) return
 
         const parts = person.ngay_sinh.split("/")

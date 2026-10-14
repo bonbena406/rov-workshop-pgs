@@ -17,15 +17,7 @@ console.log("Supabase config:", {
 })
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
-  auth: { persistSession: false },
-  global: {
-    fetch: (url, options = {}) => {
-      return fetch(url, {
-        ...options,
-        cache: "no-store",
-      })
-    },
-  },
+  auth: { persistSession: true },
 })
 
 export interface PersonnelDB {
@@ -82,6 +74,31 @@ export function getAvatarUrl(avatarPath: string | null | undefined): string {
     console.error("Error getting avatar URL:", error)
     return "/default-avatar.png"
   }
+}
+
+export interface TrackRecordDB {
+  id: number
+  no?: number | null
+  client?: string | null
+  contract?: string | null
+  project_task?: string | null
+  start_date?: string | null
+  end_date?: string | null
+  duration_days?: number | null
+  client_contact_person?: string | null
+  client_contact_phone?: string | null
+  project_sow?: string | null
+  location?: string | null
+  total_project_cost_usd?: number | null
+  water_depth_min_msw?: number | null
+  water_depth_max_msw?: number | null
+  rov_system?: string | null
+  vessel_rig?: string | null
+  class?: string | null
+  notes?: string | null
+  created_by?: string | null
+  created_at?: string | null
+  updated_at?: string | null
 }
 
 // Add this function at the end of the file, before the export statements

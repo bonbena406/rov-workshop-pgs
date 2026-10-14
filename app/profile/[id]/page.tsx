@@ -3,13 +3,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Mail, Phone, MapPin, Calendar, Building, User, GraduationCap, Briefcase, ArrowLeft } from "lucide-react"
 import Link from "next/link"
-import { getPersonnelById } from "@/lib/personnel-data"
+import { getAllPersonnel, getPersonnelById } from "@/lib/personnel-data"
 import { getAvatarUrl } from "@/lib/supabase"
 import EditButton from "./edit-button"
 
-export const dynamic = "force-dynamic"
-export const revalidate = 0
-export const fetchCache = "force-no-store"
+export async function generateStaticParams() {
+  const all = await getAllPersonnel()
+  return all.map((p) => ({ id: p.id.toString() }))
+}
 
 function getDaysRemaining(dateStr: string | null | undefined, isExpiryDate = true): string {
   if (!dateStr) return ""

@@ -9,7 +9,8 @@ import { type PersonnelDB, getAvatarUrl } from "@/lib/supabase"
 interface CertificateListModalProps {
   isOpen: boolean
   onClose: () => void
-  allPersonnel: PersonnelDB[]
+  allPersonnel?: PersonnelDB[]
+  personnel?: PersonnelDB[]
 }
 
 interface CertificateInfo {
@@ -46,11 +47,13 @@ function getDaysRemaining(expireDateStr: string | null | undefined): number {
   return diffDays
 }
 
-export default function CertificateListModal({ isOpen, onClose, allPersonnel }: CertificateListModalProps) {
+export default function CertificateListModal({ isOpen, onClose, allPersonnel, personnel }: CertificateListModalProps) {
   const [certificates, setCertificates] = useState<CertificateInfo[]>([])
   const [filterDays, setFilterDays] = useState<number>(60)
   const [showExpired, setShowExpired] = useState<boolean>(false)
   const [isExpanded, setIsExpanded] = useState<boolean>(false)
+
+  const people = allPersonnel || personnel || []
 
   useEffect(() => {
     if (isOpen) {
@@ -79,7 +82,7 @@ export default function CertificateListModal({ isOpen, onClose, allPersonnel }: 
         { key: "basic_rigging", label: "Basic Rigging" },
       ]
 
-      allPersonnel.forEach((person) => {
+      people.forEach((person) => {
         certFields.forEach(({ key, label }) => {
           const value = person[key]
           if (value && typeof value === "string" && value.includes("/")) {

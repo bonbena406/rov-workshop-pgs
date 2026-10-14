@@ -1,5 +1,4 @@
 import { supabase, type PersonnelDB } from "./supabase"
-import { revalidatePath } from "next/cache"
 import { siteConfig } from "./config"
 
 const TABLE_NAME = siteConfig.tableName
@@ -121,13 +120,6 @@ export async function updatePersonnel(id: string, updates: Partial<PersonnelDB>)
 
     console.log("Update successful:", data)
 
-    // Force revalidation of all related paths
-    revalidatePath("/")
-    revalidatePath(`/profile/${id}`)
-    revalidatePath(`/profile/${id}/edit`)
-    revalidatePath("/admin")
-    revalidatePath("/admin/manage")
-
     return true
   } catch (error) {
     console.error("Exception updating personnel:", error)
@@ -145,7 +137,6 @@ export async function addPersonnel(data: Omit<PersonnelDB, "id">): Promise<boole
       return false
     }
 
-    revalidatePath("/")
     return true
   } catch (error) {
     console.error("Exception adding personnel:", error)
@@ -163,7 +154,6 @@ export async function deletePersonnel(id: string): Promise<boolean> {
       return false
     }
 
-    revalidatePath("/")
     return true
   } catch (error) {
     console.error("Exception deleting personnel:", error)
